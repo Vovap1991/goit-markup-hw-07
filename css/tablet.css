@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  .advantages-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .advantages-title {
+    text-align: left;
+  }
+
+  .advantages-text {
+    text-align: left;
+  }
+
+  .employers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .employer-card {
+    margin-bottom: 64px;
+  }
+
+  .employer-card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .team-container {
+    max-width: 582px;
+  }

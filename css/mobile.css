@@ -1,0 +1,33 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list-item {
+    margin-bottom: 72px;
+  }
+
+  .advantages-list-item:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+
+  .work-section {
+    display: none;
+  }
+
+  .employer-card {
+    margin-bottom: 72px;
+  }
+
+  .employer-card:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 468px), (max-width: 767px) {
+  .team-container {
+    max-width: 264px;
+  }
+}

@@ -29,6 +29,7 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  min-width: 320px;
 }
 
 .list {
@@ -36,8 +37,8 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-title {
@@ -64,8 +65,9 @@ body {
 }
 
 .container {
-  width: 1158px;
-  margin: auto;
+  /* max-width: 1158px; */
+  width: 100%;
+  margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -228,13 +230,9 @@ body {
 
 /* Advantages */
 
-.advantages {
-  display: flex;
-  gap: 24px;
-}
-
 .advantages-icon {
   display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 264px;
@@ -252,19 +250,26 @@ body {
 }
 
 .advantages-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   margin-bottom: 8px;
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
 }
 
 .advantages-text {
-  color: var(--primary-text-color);
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  max-width: 264px;
+  color: var(--primary-text-color);
 }
 
 /* What we are doing */
@@ -292,7 +297,6 @@ body {
 
 .team-section {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
 }
 
 .team-section .section-title {
@@ -308,13 +312,8 @@ body {
 
 .empl-pic {
   display: block;
-  width: 264px;
+  width: 100%;
   height: auto;
-}
-
-.employers {
-  display: flex;
-  gap: 24px;
 }
 
 .employee {
@@ -344,6 +343,8 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .team-social-item {
