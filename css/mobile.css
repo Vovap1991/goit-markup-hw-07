@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 426px;
+    max-width: 428px;
   }
 }
 
@@ -23,6 +23,10 @@
 
   .employer-card:nth-last-child(-n + 1) {
     margin-bottom: 0;
+  }
+
+  .customer-item {
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 
