@@ -3,6 +3,12 @@
     max-width: 768px;
   }
 
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    .team-container {
+      max-width: 582px;
+    }
+  }
+
   .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +56,10 @@
   }
 
   .footer-container {
+    width: 565px;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .logo-wrap {
@@ -68,13 +77,23 @@
   }
 
   .social-subtitle {
+    margin: 0;
     margin-bottom: 16px;
     text-align: left;
   }
 
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+  }
+
   .subscribe-form-title {
+    margin: 0;
     text-align: left;
-    margin-left: 120px;
+  }
+
+  .subscribe-form-input {
+    display: inline-block;
   }
 
   .subscribe-form-input {
@@ -82,22 +101,15 @@
     width: 264px;
     height: 40px;
     margin-right: 24px;
-    margin-left: 120px;
   }
 
   .subscribe-button {
     display: inline-block;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .work-section {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px), (max-width: 1199px) {
-  .team-container {
-    max-width: 582px;
+  @media screen and (max-width: 1199px) {
+    .work-section {
+      display: none;
+    }
   }
 }
