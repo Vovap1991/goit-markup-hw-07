@@ -78,6 +78,19 @@
   }
 
   .subscribe-form-wrap {
+    display: block;
     width: 453px;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .subscribe-form-title {
+    margin-bottom: 16px;
+  }
+
+  .subscribe-form-input {
+    margin-bottom: 0;
   }
 }

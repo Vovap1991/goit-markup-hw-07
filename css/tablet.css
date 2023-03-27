@@ -83,17 +83,12 @@
   }
 
   .subscribe-form {
-    display: flex;
     flex-direction: row;
   }
 
   .subscribe-form-title {
-    margin: 0;
+    margin-bottom: 16px;
     text-align: left;
-  }
-
-  .subscribe-form-input {
-    display: inline-block;
   }
 
   .subscribe-form-input {

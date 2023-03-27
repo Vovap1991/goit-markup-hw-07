@@ -515,6 +515,10 @@ body {
   background-color: #31d0aa;
 }
 
+.subscribe-form {
+  display: block;
+}
+
 .subscribe-form-wrap {
   width: 100%;
 }
@@ -541,7 +545,6 @@ body {
   border-radius: 4px;
   padding-left: 16px;
   color: #ffffff;
-
   margin-bottom: 16px;
 }
 
