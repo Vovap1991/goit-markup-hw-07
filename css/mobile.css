@@ -2,9 +2,7 @@
   .container {
     max-width: 428px;
   }
-}
 
-@media screen and (max-width: 767px) {
   .advantages-list-item {
     margin-bottom: 72px;
   }
@@ -27,6 +25,16 @@
 
   .customer-item {
     flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+
+  .auth-nav {
+    display: none;
   }
 }
 
