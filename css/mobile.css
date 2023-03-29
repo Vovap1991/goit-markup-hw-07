@@ -3,28 +3,16 @@
     max-width: 428px;
   }
 
-  .advantages-list-item {
-    margin-bottom: 72px;
-  }
-
-  .advantages-list-item:nth-last-child(-n + 1) {
-    margin-bottom: 0;
-  }
-
   .work-section {
     display: none;
   }
 
-  .employer-card {
-    margin-bottom: 72px;
-  }
-
-  .employer-card:nth-last-child(-n + 1) {
-    margin-bottom: 0;
-  }
-
   .customer-item {
     flex-basis: calc((100% - 16px) / 2);
+  }
+  .modal {
+    width: 392px;
+    height: 586px;
   }
 }
 

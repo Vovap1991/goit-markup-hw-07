@@ -93,6 +93,10 @@ body {
   align-items: center;
   width: 32px;
   height: 22px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .mobile-menu {
@@ -313,36 +317,47 @@ body {
 
 /* ----------------- Main Page --------------------*/
 
-/* ------------------ Hero ------------------------ */
+/* ----------------------------- Hero -------------------------------- */
 
 .hero {
-  padding: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image/hero-img.jpg);
+    url(../images/hero-image/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 428px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image/hero-bg-mobile-2x.jpg);
+  }
 }
 
 .hero-title {
   margin: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  max-width: 318px;
 }
 
 .hero-button {
   padding: 16px 32px;
-  font-family: inherit;
   color: #ffffff;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -369,7 +384,14 @@ body {
   border-radius: 4px;
 }
 
-/* Advantages */
+/*-------------------------  Advantages ---------------------------------*/
+
+.container-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+}
 
 .advantages-icon {
   display: flex;
@@ -392,7 +414,6 @@ body {
 
 .advantages-title {
   margin-bottom: 8px;
-
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
@@ -405,15 +426,13 @@ body {
 
 .advantages-text {
   text-align: center;
-  font-family: 'Roboto';
-  font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
-/* What we are doing */
+/*------------------------- What we are doing --------------------------*/
 
 .work-section {
   padding-top: 0;
@@ -434,7 +453,7 @@ body {
   gap: 24px;
 }
 
-/* ------------------- Team ------------------------- */
+/* ------------------------- Team -------------------------------- */
 
 .team-section {
   background-color: #f4f4fd;
@@ -443,6 +462,15 @@ body {
 .team-section .section-title {
   margin: 0;
   margin-bottom: 72px;
+}
+
+.employers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .employer-card {
@@ -537,18 +565,14 @@ body {
 .customer-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
   justify-content: center;
-  gap: 0 16px;
 }
 
 .customer-item {
   width: 190px;
   height: 88px;
-  margin-bottom: 72px;
-}
-
-.customer-item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
 }
 
 .customer-link {
@@ -576,29 +600,29 @@ body {
 
 /* ----------------- Footer ---------------------- */
 .footer {
-  background-color: #2e2f42;
-  color: #e7e9fc;
+  display: flex;
+  align-items: center;
   padding-top: 96px;
   padding-bottom: 96px;
+  background-color: #2e2f42;
 }
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .logo-wrap {
   max-width: 268px;
-  margin: 0 auto;
-  margin-bottom: 72px;
 }
 
-/* .logo {
+.logo {
   display: block;
   text-align: center;
   margin: 0 auto;
-} */
+}
 
 .logo-item-white {
   color: #f4f4fd;
@@ -621,8 +645,7 @@ body {
 }
 
 .social-wrap {
-  margin: auto;
-  margin-bottom: 72px;
+  margin: 0;
 }
 
 .social-subtitle {
@@ -678,12 +701,14 @@ body {
 }
 
 .subscribe-form-input {
-  max-width: 396px;
+  align-content: center;
+  padding: 8px 16px;
   width: 100%;
   height: 40px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: none;
   border-radius: 4px;
   padding-left: 16px;
   color: #ffffff;
@@ -758,14 +783,14 @@ body {
 }
 
 .modal {
+  width: 95%;
+  height: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  height: 584;
-  padding-top: 72px;
-  padding-bottom: 24px;
+  /* width: 408px;
+  height: 584; */
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -803,11 +828,20 @@ body {
 /* ---------------- Form ------------------ */
 
 .leave-contacts-form {
-  width: 360px;
   margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .form-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   display: block;
   text-align: center;
   margin-bottom: 16px;
