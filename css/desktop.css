@@ -93,4 +93,21 @@
   .subscribe-form-input {
     margin-bottom: 0;
   }
+
+  .header {
+    padding-bottom: 28px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .auth-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .auth-nav .link {
+    font-size: 16px;
+  }
 }
