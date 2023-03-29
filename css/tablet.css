@@ -3,12 +3,6 @@
     max-width: 768px;
   }
 
-  @media screen and (min-width: 768px), (max-width: 1199px) {
-    .team-container {
-      max-width: 582px;
-    }
-  }
-
   .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -102,9 +96,42 @@
     display: inline-block;
   }
 
-  @media screen and (max-width: 1199px) {
-    .work-section {
-      display: none;
-    }
+  .mobile-menu {
+    display: none;
+  }
+
+  .burger-menu-button {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .auth-nav .link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .team-container {
+    max-width: 582px;
   }
 }
