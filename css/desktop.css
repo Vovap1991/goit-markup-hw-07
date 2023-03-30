@@ -116,6 +116,8 @@
     font-size: 16px;
   }
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
